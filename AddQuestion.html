@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel="stylesheet" href="WelcomeInst.css">
+</head>
 <body>
 
-<form action="#">
+<form action="AddQuestion.php" method="post">
+
+    <nav>
+      <ul>
+        <li><a href="WelcomeInst.html">Home</a></li>
+        <li><a href="AddQuestion.html">Add Questions</a></li>
+        <li><a href="ExamQuestion.html">Create Exam</a></li>
+        <li><a href="GradeRelease.html">Release Grade</a></li>
+        <li style="float:right"><a class="active" href="index.html">Log Out</a></li>
+      </ul>
+    <div class="handle">Menu</div>
+  </nav>
 
   <header>
-    <h2>Exam Questions</h2>
+    <h2>Add Exam Questions</h2>
   </header>
+
+  <div>
+    <label class="desc" id="message" for="Field4">
+      Message
+    </label>
+  
+    <div>
+      <textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+    </div>
+  </div>
   
   <div>
     <label class="desc" id="funname" for="Field1">Function Name</label>
@@ -15,28 +39,18 @@
     </div>
   </div>
     
-  <form action="/action_page.php">
-  <select name="cars">
-    <option value="None">None</option>
-    <option value="Java">Java</option>
-    <option value="C++">C++</option>
-    <option value="Python">Python</option>
+  <p>Category</p>
+  <select id="type">
+    <option >Type</option>
+    <option value="recursion">Recursion</option>
+    <option value="forloop">For Loop</option>
+    <option value="whileloop">While Loop</option>
+    <option value="conditional">Conditional</option>
+    <option value="indexing">Indexing</option>
   </select>
-</form>
-
-  <div>
-    <label class="desc" id="title4" for="Field4">
-      Message
-    </label>
-  
-    <div>
-      <textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
-    </div>
-  </div>
-
 
 	<div>
-		<label class="desc" id="title5" for="Field5">
+		<label class="desc" id="tci" for="Field5">
 		Test Case Input
 		</label>
 		<div>
@@ -45,7 +59,7 @@
 	</div>
 
 	<div>
-	    <label class="desc" id="title6" for="Field6">
+	    <label class="desc" id="tcr" for="Field6">
 	    Test Case Result
 	    </label>
   
@@ -64,4 +78,3 @@
 
 </body>
 </html>
-
